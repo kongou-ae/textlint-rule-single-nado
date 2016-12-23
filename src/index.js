@@ -30,7 +30,7 @@ module.exports = function(context, options = {}) {
                     })
 
                     // 使われていたら、その前に「や」があるかチェック
-                    if (firstFlag == true){
+                    if (firstFlag === true){
                         tokens.forEach(function(token,k){
                             if ( token.surface_form === 'や' && token.pos_detail_1 === '並立助詞'){
                                 secondFlag++
