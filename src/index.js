@@ -40,8 +40,8 @@ module.exports = function(context, options = {}) {
                             }
                         })
                     }
-
-                    if (secondFlag === 0){
+                    
+                    if (firstFlag === true && secondFlag === 0){
                         const ruleError = new RuleError("「など」「等」を使う場合は、2つ以上の具体例を挙げます。",{
                             index:position - 1 
                         });
